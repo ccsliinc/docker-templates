@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>Network Tools:</Category>
+  <Name>OpenVAS</Name>
+  <Description>
+	OpenVAS is a framework of several services and tools offering a comprehensive and powerful vulnerability scanning and vulnerability management solution. The framework is part of Greenbone Networks' commercial vulnerability management solution from which developments are contributed to the Open Source community since 2009.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/var/lib/openvas/mgr[/b] This is where openvas will store it's configuration file, database and logs.[br]
+  </Description>
+  <Overview>
+	OpenVAS is a framework of several services and tools offering a comprehensive and powerful vulnerability scanning and vulnerability management solution. The framework is part of Greenbone Networks' commercial vulnerability management solution from which developments are contributed to the Open Source community since 2009.
+  </Overview>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/mikesplain/openvas/</Registry>
+  <GitHub>https://github.com/mikesplain/openvas-docker</GitHub>
+  <Repository>mikesplain/openvas</Repository>
+  <Project>http://www.openvas.org/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9390</HostPort>
+        <ContainerPort>9390</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>OV_PASSWORD</Name>
+      <Value>admin</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/openvas</HostDir>
+      <ContainerDir>/var/lib/openvas/mgr</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8443]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/ccsliinc/docker-templates/master/ccsliinc/images/openvas.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://paypal.me/jsugamele</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
