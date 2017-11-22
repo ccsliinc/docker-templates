@@ -14,7 +14,7 @@
   <Support></Support>
   <Registry>https://hub.docker.com/r/mikesplain/openvas/</Registry>
   <GitHub>https://github.com/mikesplain/openvas-docker</GitHub>
-  <Repository>mikesplain/openvas-docker</Repository>
+  <Repository>mikesplain/openvas</Repository>
   <Project>http://www.openvas.org/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
