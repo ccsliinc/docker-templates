@@ -2,7 +2,7 @@
 <Containers>
 <Beta>False</Beta>
 <Category>Network Tools:</Category>
-  <Name>ccsliinc-openvas</Name>
+  <Name>OpenVAS</Name>
   <Description>
 	OpenVAS is a framework of several services and tools offering a comprehensive and powerful vulnerability scanning and vulnerability management solution. The framework is part of Greenbone Networks' commercial vulnerability management solution from which developments are contributed to the Open Source community since 2009.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
@@ -35,20 +35,8 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>Password</Name>
+      <Name>OV_PASSWORD</Name>
       <Value>admin</Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
     </Variable>
   </Environment>
   <Data>
